@@ -1,0 +1,27 @@
+body {
+    background-color: #024754;
+    font-family: 'Mate SC', serif;
+    font-size: 20px;
+}
+
+#textbox {
+    border: none;
+    border-bottom: 4px solid white;
+    width: 300px;
+    margin-top: 20px;
+    height: 30px;
+}
+
+.reg {
+    border: 4px solid white;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 30px;
+    transform: translateY(30px);
+}

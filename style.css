@@ -1,0 +1,59 @@
+    body {
+        background-image: url('VIRUS.jpg');
+        background-size: cover;
+        font-family: 'Mate SC', serif;
+    }
+    
+    .logo {
+        transform: translateY(20px);
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 60px;
+    }
+    
+    span {
+        color: red;
+    }
+    
+    .navbar {
+        text-align: right;
+        margin-top: 40px;
+        transform: translateY(-40px);
+    }
+    
+    .navbar a {
+        padding-top: 10px;
+        margin: 5px 10px 5px 10px;
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-flex;
+        color: black;
+        font-weight: 700;
+    }
+    
+    .navbar a:hover {
+        border-bottom: 3px solid#000;
+    }
+    
+    .reg {
+        border: 4px solid green;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+        margin-left: 30px;
+        transform: translateY(30px);
+    }
+    
+    .check {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    }

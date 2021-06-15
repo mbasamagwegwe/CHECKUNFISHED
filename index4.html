@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <script src="quize.js"></script>
+
+    <style>
+        body {
+            background-color: #a07676;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: yellow;
+        }
+        
+        .navbar {
+            text-align: right;
+            margin-top: 40px;
+            transform: translateY(-40px);
+        }
+        
+        .navbar a {
+            padding-top: 10px;
+            margin: 5px 10px 5px 10px;
+            font-size: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-flex;
+            color: black;
+            font-weight: 700;
+        }
+        
+        .navbar a:hover {
+            border-bottom: 3px solid#000;
+        }
+        
+        .content #btn {
+            border: 2px solid #000;
+            background-color: white;
+            color: #000;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" navbar ">
+        <a href="index2.html">HOME</a>
+        <a href="index.html">CHECK UP</a>
+        <a href="music.html ">SENSOR</a>
+        <a href="gallary.html ">QUIZE</a>
+        <a href="contact.html ">Contact Us</a>
+    </div>
+
+    <h1>Low-BarQUIZ
+        <img src="empty.png"></h1>
+    <div class="content">
+        <p>1.When did covid 19 start?</p>
+        <input type="radio" name="question1" class="rad">2019<br>
+        <input type="radio" name="question1 " id="correct1 ">2020<br>
+        <input type="radio" name="question1 ">2021<br>
+        <p>2.How is covid 19 passed on?</p>
+        <input type="radio" name="question2 " id="correct2 ">through droplest that comes mouth and<br> nose when you cough or breath<br>
+        <input type="radio" name="question2 ">drinking conteminated water<br>
+        <input type="radio" name="question2 ">all of the above<br>
+        <p>3.What are common symptoms of covid?</p>
+        <input type="radio" name="question3 ">fever<br>
+        <input type="radio" name="question3 ">sore throat<br>
+        <input type="radio" name="question3 " id="correct3 ">all of the above<br>
+        <p>4.Can you always tell if someone has covid ?</p>
+        <input type="radio" name="question4 ">Yes<br>
+        <input type="radio" name="question4 " id="correct4 ">No<br>
+        <p>5.When should fabric musk be worn?</p>
+        <input type="radio" name="question5 ">In crowded places<br>
+        <input type="radio" name="question5 ">in small shops<br>
+        <input type="radio" name="question5 " id="correct5 ">all of the above<br>
+        <input type="submit" name="submit " id="btn " value="submitQuiz " onclick="result() ">
+
+    </div>
+
+
+    <script type="text/javascript ">
+        function result() {
+            var score = 0;
+            if (document.getElementById("correct1 ").checked) {
+                score++;
+            }
+            if (document.getElementById("correct2 ").checked) {
+                score++;
+            }
+            if (document.getElementById("correct3 ").checked) {
+                score++;
+            }
+            if (document.getElementById("correct4 ").checked) {
+                score++;
+            }
+            if (document.getElementById("correct5 ").checked) {
+                score++;
+            }
+            document.write("Your score is: " + score);
+        }
+    </script>
+</body>
+
+</html>
